@@ -1,0 +1,28 @@
+﻿@model MvcApp.Models.ShareContents
+    
+<h2>Share Contents</h2>
+<div class="container">
+    <div class="row">
+        <table class="table">
+            <tr>
+                <th>
+                    Path
+                </th>
+                <th>
+                    File Count
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    @Model.Path
+                </td>
+                <td>
+                    @Model.FileCount
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        @Html.ActionLink("Add File", "AddFile")
+    </div>
+</div>
